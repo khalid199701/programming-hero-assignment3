@@ -21,7 +21,10 @@
               colors: {
                 clifford: '#da373d',
                 'house-primary': '#ABEF5F',
-                'back-color': '#1E1E1E',
+                back_color: '#F4F4F4',
+              },
+              backgroundImage: {
+                aboutBg: "url('')"
               }
             }
           }
@@ -29,10 +32,10 @@
       </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="manrope-font">
+<body class="manrope-font bg-back_color">
     <header>
-        <nav class="md:container md:mx-auto">
-            <div class="navbar bg-base-100 justify-evenly">
+        <nav class="md:container md:mx-auto bg-back_color">
+            <div class="navbar justify-evenly">
                 <div class="">
                     <span><i class="fa-solid fa-arrow-right bg-house-primary rounded-full px-1 py-1 -rotate-45"></i></span> <a class="text-2xl font-bold">Rinterio</a>
                 </div>
@@ -52,22 +55,11 @@
                 </div>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
+                      <i class="fa-solid fa-bars"></i>
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 hidden lg:block">
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
                       <li><a class="font-bold">Home</a></li>
                       <li><a>Services</a></li>
                       <li><a>Portfolio</a></li>
@@ -77,8 +69,9 @@
                   </div>
             </div>
         </nav>
-        <section class="md:container md:mx-auto">
-          <div class="hero bg-base-200 min-h-screen w-full bg-white">
+        <!-- Hero section -->
+        <section class="bg-base-200 w-full">
+          <div class="md:w-11/12 md:mx-auto hero min-h-screen w-full bg-white">
             <div class="hero-content text-center items-center">
               <div class="max-w-screen-md mx-auto flex flex-col items-center">
                 <img class="" src="assets/banner.png" alt="">
@@ -92,7 +85,44 @@
           </div>
         </section>
     </header>
-    <main></main>
+    <main>
+      <!-- design section -->
+      <section class="w-11/12 mx-auto md:my-8 flex flex-col gap-2 lg:flex-row">
+        <div class="relative">
+          <img src="assets/Vector.png" class="hidden lg:block lg: absolute lg:h-6 -left-3 -top-3" alt="">
+          <div class="">
+            <button class="btn bg-white text-black rounded-full my-3"><span><i class="fa-solid fa-arrow-right"></i></span>About us</button>
+          </div>
+          <div>
+            <div>
+              <h1 class="text-3xl font-bold">We design thoughtful, liveable spaces</h1>
+              <p class="text-slate-400 py-5">The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <div class="about-card-container">
+                <div class="bg-base-100 rounded-lg flex">
+                  <img src="assets/commercial.png" class="px-2 py-4" alt="">
+                  <div class="px-2 py-4">
+                    <h3 class="text-xl font-bold">Commercial</h3>
+                    <p class="text-slate-400">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+                <div class="bg-base-100 rounded-lg my-3 flex">
+                  <img src="assets/residential.png" class="px-2 py-4" alt="">
+                  <div class="px-2 py-4">
+                    <h3 class="text-xl font-bold">Residential</h3>
+                    <p class="text-slate-400">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div>
+          <img src="assets/Rectangle.png" alt="">
+        </div>
+      </section>
+    </main>
     <footer></footer>
 </body>
 </html>
