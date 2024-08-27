@@ -13,6 +13,10 @@
         .manrope-font{
             font-family: "Manrope", sans-serif;
         }
+        .bg-formBg {
+            background-size: cover;
+            background-position: center;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -28,7 +32,7 @@
                 planning: '#77AAEA'
               },
               backgroundImage: {
-                aboutBg: "url('')"
+                formBg: "url('./assets/bg.jpg')"
               }
             }
           }
@@ -223,6 +227,36 @@
           </div>
         </div>
        </section>
+       <!-- form -->
+        <section class="form contianer bg-formBg bg-no-repeat py-8">
+          <div class="text-center">
+            <div class="">
+              <button class="btn bg-house-primary text-black rounded-full my-3"><span><i class="fa-solid fa-arrow-right"></i></span>Explore our Latest works</button>
+            </div>
+            <h2 class="text-3xl font-bold my-5">Our Latest Portfolio</h2>
+            <p class="text-slate-400 my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+          <form action="" class="w-11/12 mx-auto items-center">
+            <div class="w-full flex flex-col lg:flex-row gap-3 items-center">
+              <input type="text" placeholder="First Name*" class="input input-bordered w-full lg:w-1/2 max-w-screen-lg rounded-full" />
+              <input type="text" placeholder="Last Name*" class="input input-bordered w-full lg:w-1/2 max-w-screen-lg rounded-full" />
+            </div>
+            <br>
+            <div class="w-full flex flex-col lg:flex-row items-center gap-3">
+              <input type="text" placeholder="Phone Number*" class="input input-bordered w-full lg:w-1/2 max-w-screen-lg rounded-full" />
+              <input type="text" placeholder="Email Address" class="input input-bordered w-full lg:w-1/2 max-w-screen-lg rounded-full" />
+            </div>
+            <br>
+            <div class=" items-center">
+              <textarea class="textarea textarea-bordered rounded-full lg:rounded-3xl w-full lg:w-full" placeholder="Write your Message here"></textarea>
+            </div>
+            <br>
+            <div class="w-11/12 lg:w-full mx-auto items-center">
+              <button class="text-lg w-full btn bg-house-primary rounded-full">Send Mail <span><i class="fa-solid fa-arrow-right bg-black text-white rounded-full px-1 py-1 -rotate-45"></i></span></button>
+            </div>
+          </form>
+        </section>
+       
     </main>
     <footer></footer>
 </body>
